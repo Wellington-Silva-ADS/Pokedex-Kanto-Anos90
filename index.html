@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Kanto - Pokémon dos anos 90</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/pokemons.js" defer></script>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <nav id="caixa_menu">
+            <div id="menu" class="center">
+                <div class="item_menu"><a href="#header">Home</a></div>
+                <div class="item_menu"><a href="#pokedex">Pokédex</a></div>
+                <div class="item_menu"><a href="#sobre">Sobre</a></div>
+            </div>
+        </nav>
+
+        <div id="header">
+            <div id="caixa_header" class="center">
+                <h1>Pokédex Kanto</h1>
+                <p>Os 151 Pokémon que marcaram os anos 90, com dados em tempo real da PokéAPI.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo -->
+    <main>
+        
+        <!-- Seção Pokemons -->
+        <section id="pokedex">
+            <div class="titulo">
+                <h2>Escolha seu Pokémon</h2>
+            </div>
+
+            <div id="filtros" class="center">
+                <input type="text" id="busca" placeholder="Buscar por nome ou número" aria-label="Buscar Pokémon">
+                <button id="btnFavoritos" type="button">Mostrar favoritos</button>
+            </div>
+
+            <p id="mensagem" class="center">Carregando Pokémon...</p>
+
+            <!-- Os cards são criados automaticamente pelo JavaScript -->
+            <div id="cardPersonagens" class="center"></div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre" class="center">
+            <h2>Sobre o projeto</h2>
+            <p>
+                Pokémon estreou no Japão em 1996 e chegou ao Brasil no fim dos anos 90.
+                Esta página consome a API pública <strong>PokéAPI</strong> com <code>fetch</code>
+                e monta cada card com <code>createElement</code> e <code>appendChild</code>.
+            </p>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div id="caixa_footer" class="center">
+            Projeto Web Programming Front-End UniFECAF - dados da PokéAPI (pokeapi.co) - Autor: Wellington de Paula Silva
+        </div>
+    </footer>
+</body>
+</html>
